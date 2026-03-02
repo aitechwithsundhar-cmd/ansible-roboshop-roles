@@ -1,5 +1,0 @@
-- name: roles demdo 
-  hosts: localhost 
-  connection: local 
-  roles:
-  - demo
