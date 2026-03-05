@@ -6,8 +6,7 @@ REDIS_HOST: redis-dev.techdaws.online
 USER_HOST: user-dev.techdaws.online
 CART_HOST: cart-dev.techdaws.online
 MYSQL_HOST: mysql-dev.techdaws.online
+MYSQL_ROOT_PASSWORD: RoboShop@1
 SHIPPING_HOST: shipping-dev.techdaws.online
 RABBITMQ_HOST: rabbitmq-dev.techdaws.online
 PAYMENT_HOST: payment-dev.techdaws.online
-MYSQL_HOST: mysql-dev.techdaws.online
-MYSQL_ROOT_PASSWORD: RoboShop@1
