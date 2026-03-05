@@ -22,13 +22,22 @@
   - cryptography
   - PyMySQL
 
+- name: Create mysql credentials file
+  ansible.builtin.copy:
+    dest: /root/.my.cnf
+    content: |
+      [client]
+      user=root
+      password=RoboShop@1
+    mode: '0600'
+
 - name: import shipping database schema
   community.mysql.mysql_db:
     state: import
     name: all
     login_host: "{{ MYSQL_HOST }}"
     login_user: root
-    login_password: RoboShop@1
+    login_password: "{{ MYSQL_ROOT_PASSWORD }}"
     target: "{{ item }}"
   loop:
     - /app/db/schema.sql
