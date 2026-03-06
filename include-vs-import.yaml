@@ -1,5 +1,5 @@
 - name: invlude vs import
-  hosts: local 
+  hosts: localhost 
   connection: local 
   roles:
   - include-import 
