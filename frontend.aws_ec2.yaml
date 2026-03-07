@@ -3,10 +3,11 @@ regions:
 - us-east-1
 hostnames:
 - private-ip-address # - privet-ip-address also can 
-keyed_groups:
-- prefix: ""
-  key: frontend
 filters:
   instance-state-name: running
   tag:Name: frontend-dev
+compose:
+  ansibile_groups:
+  - prefix: ""
+    key: frontend
   
