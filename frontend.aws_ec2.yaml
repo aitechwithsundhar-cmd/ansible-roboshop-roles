@@ -4,5 +4,5 @@ regions:
 hostnames:
 - ip-address # - privet-ip-address also can 
 filters:
-  instance-state-name:
+  instance-state-name: running
   tag:name: frontend-dev
