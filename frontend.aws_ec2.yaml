@@ -8,7 +8,7 @@ hostnames:
 
 filters:
   instance-state-name: running
-  tag:Name: running
+  #tag:Name: running
 
 compose:
   ansible_host: private_ip_address
