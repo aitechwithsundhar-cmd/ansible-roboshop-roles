@@ -2,7 +2,7 @@ plugin: amazon.aws.aws_ec2
 regions: 
 - us-east-1
 hostnames:
-- ip-address # - privet-ip-address also can 
+- private-ip-address # - privet-ip-address also can 
 filters:
   instance-state-name: running
-  tag:name: frontend-dev
+  tag:Name: frontend-dev
