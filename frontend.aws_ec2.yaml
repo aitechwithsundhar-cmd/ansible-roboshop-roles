@@ -9,6 +9,6 @@ filters:
 compose:
   ansible_host: private_ip_address
 ansibile_groups:
-  - prefix: ""
-    key: tags_Name
+  - separator: ""
+    key: frontend
   
